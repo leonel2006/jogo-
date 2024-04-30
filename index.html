@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Quiz de Geografia</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Quiz de Geografia</h1>
+        <!-- Formulário para inserir o nome -->
+        <form id="nameForm">
+            <div class="form-group">
+                <label for="name">Digite seu nome:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Quiz</button>
+        </form>
+        <!-- Div para exibir o quiz -->
+        <div id="quiz" class="card p-4" style="display: none;">
+            <h2 id="question"></h2>
+            <div id="options" class="btn-group-vertical mt-3"></div>
+            <button id="nextBtn" class="btn btn-primary mt-3">Próxima</button>
+        </div>
+        <!-- Div para exibir o resultado final -->
+        <div id="result" class="text-center mt-4"></div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Adicionando o arquivo JavaScript externo -->
+</body>
+
+</html>
